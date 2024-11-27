@@ -42,6 +42,17 @@
 
 - Secrets management with k8s intergration
   - Also argocd integration
+- Depending on the environment you are in (e.g., test) certain .env vars are not
+  required.
+- Docker env vars vs. env vars in the terminal (e.g., nats//nats vs
+  nats//localhost)
+- In k8s discovery of endpoints is different depending on the namespace
+  (nats//k8sservice...) Full URL vs. short url
+
+# Anti-Patterns (Build Content Around These)
+- Contingent env vars (i.e., if you use this OpenAI API key, use this assistant
+  ID). Maybe this isn't something we solve for? Maybe this is a discovery
+  mechanism, like look up the agent by name.
 
 # Maybe features
 
