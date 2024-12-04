@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
@@ -57,14 +56,4 @@ func main() {
 	rootCmd.AddCommand(helloCmd)
 	rootCmd.AddCommand(parseEnvCmd)
 	rootCmd.Execute()
-}
-
-func parseLine(line string) (key, value string) {
-	// Split the line into key and value
-	// KEY=VALUE
-	parts := strings.Split(line, "=")
-	if len(parts) == 2 {
-		return parts[0], parts[1]
-	}
-	return "", ""
 }
