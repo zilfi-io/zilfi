@@ -23,6 +23,9 @@
   - Trunk based system (for example)
     - Organizations, Teams, Projects, Environments, Users, Roles, likely others.
 - Key rotation
+  - Could be automatic based on:
+    - Time
+    - Changes in roster (e.g., someone leaves the team)
 - Keys that need to be present but just need to be something
   - For example an x-api-key header for 2 services that you run locally that talk to each other
   - Allow the user to input and sync (across there apps locally) or just have the tool auto generate the key for them
