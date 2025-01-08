@@ -1,4 +1,4 @@
 lint:
-	gofumpt -w .;
 	go vet ./...;
+	gofumpt -w .;
 	golangci-lint run;
