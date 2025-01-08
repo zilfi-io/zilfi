@@ -1,0 +1,14 @@
+{
+  "linters": {
+    "enable-all": true,
+    "disable": [
+      "depguard",
+      "exhaustruct",
+      "exportloopref"
+    ]
+  },
+  "issues": {
+    "max-issues-per-linter": 0,
+    "max-same-issues": 0
+  }
+}
